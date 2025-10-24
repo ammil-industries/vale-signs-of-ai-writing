@@ -2,6 +2,7 @@ extends: existence
 message: "Markdown syntax in non-markdown context: '%s'"
 level: error
 link: https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing
+scope: ~text.md
 nonword: true
 tokens:
   - '^```[a-z]*$'
