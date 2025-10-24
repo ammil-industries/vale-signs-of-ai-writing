@@ -1,1 +1,20 @@
-$rule_yaml
+extends: existence
+message: "Excessive hedging language detected: '%s'"
+level: warning
+link: https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing
+tokens:
+  - "it's important to note"
+  - 'it is worth noting'
+  - 'it should be noted'
+  - 'notably'
+  - "it's worth mentioning"
+  - 'of course'
+  - 'certainly'
+  - 'clearly'
+  - 'obviously'
+  - 'undoubtedly'
+  - 'without a doubt'
+  - 'there is no doubt'
+  - 'it goes without saying'
+  - 'needless to say'
+  - 'as you might expect'
