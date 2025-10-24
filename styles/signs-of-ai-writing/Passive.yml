@@ -1,1 +1,13 @@
-$rule_yaml
+extends: existence
+message: "Passive voice construction detected: '%s'"
+level: suggestion
+link: https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing
+tokens:
+  - 'was founded by'
+  - 'is known for'
+  - 'is considered'
+  - 'was established by'
+  - 'is recognized as'
+  - 'was created by'
+  - 'is regarded as'
+  - 'was developed by'
