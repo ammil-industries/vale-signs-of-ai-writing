@@ -1,0 +1,11 @@
+extends: existence
+message: "Range construction detected: '%s'"
+level: suggestion
+link: https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing
+tokens:
+  - 'ranging from .+ to'
+  - 'between .+ and'
+  - 'from .+ to'
+  - 'spans from .+ to'
+  - 'varies from .+ to'
+  - 'extends from .+ to'
