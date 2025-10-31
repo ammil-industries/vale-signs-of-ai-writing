@@ -1,5 +1,5 @@
 extends: existence
-message: "Superlative/intensifier detected: '%s'"
+message: "Intensifier detected: '%s'"
 level: suggestion
 link: https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing
 tokens:

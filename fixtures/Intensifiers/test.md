@@ -1,4 +1,4 @@
-# Superlatives Test Cases
+# Intensifiers Test Cases
 
 ## Should Flag (True Positives)
 
