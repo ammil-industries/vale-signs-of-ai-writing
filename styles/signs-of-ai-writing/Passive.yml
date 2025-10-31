@@ -1,13 +1,16 @@
 extends: existence
-message: "Passive voice construction detected: '%s'"
+message: "'%s' looks like passive voice."
+ignorecase: true
 level: suggestion
 link: https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing
+raw:
+  - \b(am|are|were|being|is|been|was|be)\b\s*
 tokens:
-  - 'was founded by'
-  - 'is known for'
-  - 'is considered'
-  - 'was established by'
-  - 'is recognized as'
-  - 'was created by'
-  - 'is regarded as'
-  - 'was developed by'
+  - founded
+  - known
+  - considered
+  - established
+  - recognized
+  - created
+  - regarded
+  - developed
