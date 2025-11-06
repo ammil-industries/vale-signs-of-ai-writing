@@ -2,18 +2,22 @@
 name: Release
 on:
   push:
-    branches:
-      - main
+    tags:
+      - 'v*.*.*'
 jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout
         uses: actions/checkout@main
       - name: Create release
         run: |
           zip -r signs-of-ai-writing.zip styles/signs-of-ai-writing
-          gh release create v$GITHUB_RUN_NUMBER 'signs-of-ai-writing.zip'
+          gh release create ${{ github.ref_name }} signs-of-ai-writing.zip \
+            --title "Vale Signs of AI Writing ${{ github.ref_name }}" \
+            --notes "Release ${{ github.ref_name }} of Vale Signs of AI Writing style package."
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
