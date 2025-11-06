@@ -1,0 +1,19 @@
+---
+name: Release
+on:
+  push:
+    branches:
+      - main
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@main
+      - name: Create release
+        run: |
+          zip -r signs-of-ai-writing.zip vale-signs-of-ai-writing
+          gh release create v$GITHUB_RUN_NUMBER 'signs-of-ai-writing.zip'
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
