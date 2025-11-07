@@ -4,7 +4,18 @@ A [Vale](https://vale.sh) style for detecting linguistic patterns characteristic
 
 ## Installation
 
-TODO: Installation instructions to be finalised.
+To get started, add the package to your local `.vale.ini` configuration file (as shown below) and then run `vale sync`.
+
+```ini
+StylesPath = styles
+
+Packages = https://github.com/ammil-industries/vale-signs-of-ai-writing/releases/latest/download/signs-of-ai-writing.zip
+
+[*]
+BasedOnStyles = Vale, signs-of-ai-writing
+```
+
+Alternatively, download the [latest release](https://github.com/ammil-industries/vale-signs-of-ai-writing/releases/latest/download/signs-of-ai-writing.zip) (zip), extract and copy the "signs-of-ai-writing" directory to your StylesPath, and include it in your configuration file:
 
 ## Limitations
 
