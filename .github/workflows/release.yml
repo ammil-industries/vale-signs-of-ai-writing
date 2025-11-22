@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@main
       - name: Create release
         run: |
-          zip -r signs-of-ai-writing.zip .vale.ini styles/signs-of-ai-writing
+          cd styles && zip -r ../signs-of-ai-writing.zip signs-of-ai-writing && cd ..
           gh release create ${{ github.ref_name }} signs-of-ai-writing.zip \
             --title "Vale Signs of AI Writing ${{ github.ref_name }}" \
             --notes "Release ${{ github.ref_name }} of Vale Signs of AI Writing style package."
