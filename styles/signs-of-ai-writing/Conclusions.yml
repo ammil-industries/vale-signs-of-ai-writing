@@ -1,0 +1,11 @@
+extends: existence
+message: "Formulaic conclusion marker detected: '%s'"
+level: warning
+link: https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing
+tokens:
+  - 'in conclusion,'
+  - 'to conclude,'
+  - 'in summary,'
+  - 'to summarize,'
+  - 'to sum up,'
+  - 'ultimately,'
