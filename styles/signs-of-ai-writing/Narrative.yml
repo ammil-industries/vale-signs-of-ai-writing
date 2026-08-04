@@ -2,6 +2,7 @@ extends: existence
 message: "Prescriptive narrative language detected: '%s'"
 level: suggestion
 link: https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing
+ignorecase: true
 tokens:
   - 'it is important to understand'
   - 'it is crucial to recognize'
