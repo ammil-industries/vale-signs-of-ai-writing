@@ -1,0 +1,10 @@
+extends: existence
+message: "Signposting detected: '%s' makes a page or link the actor. Say the thing itself, or make the reader the actor."
+level: warning
+link: https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing
+scope: raw
+nonword: true
+ignorecase: true
+tokens:
+  - '\]\([^)\s]*\)\s+(?:page\s+)?(?:explains|says|lists|shows|gives|covers|describes|states|details|outlines|walks you through)\b'
+  - '\b(?:this|the) (?:page|section|guide|article|note) (?:explains|lists|covers|describes|shows|says|outlines|walks you through)\b'
