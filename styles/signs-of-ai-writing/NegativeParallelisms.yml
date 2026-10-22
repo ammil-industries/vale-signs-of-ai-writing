@@ -1,0 +1,11 @@
+extends: existence
+message: "Negative parallelism detected: '%s'. Say what it is, without the contrast."
+level: suggestion
+link: https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing#Negative_parallelisms
+ignorecase: true
+nonword: true
+tokens:
+  - "\\bnot (?:just|only|merely|simply) (?:a|an|the|about)\\b"
+  - "\\b(?:it's|it is|this is|that's|that is) not (?:just )?(?:a|an|the|about) [^.]{1,60}[,;—–-] (?:it's|it is|but)\\b"
+  - "\\b(?:isn't|aren't|is not|are not) (?:just|only|merely)\\b"
+  - "\\bno [^.]{1,40}, no [^.]{1,40}, just\\b"
