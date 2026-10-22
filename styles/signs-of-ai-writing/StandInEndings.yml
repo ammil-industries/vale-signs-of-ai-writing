@@ -1,0 +1,10 @@
+extends: existence
+message: "Stand-in ending detected: '%s'. End the sentence on the thing itself."
+level: warning
+link: https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing
+ignorecase: true
+nonword: true
+tokens:
+  - '\beach one(?=[.!?;:,)]|\s*$)'
+  - '\b(?:as|for|of|to|about|with|on|in) each[.!?;:](?=\s|$)'
+  - '\bevery one[.!?;:](?=\s|$)'
